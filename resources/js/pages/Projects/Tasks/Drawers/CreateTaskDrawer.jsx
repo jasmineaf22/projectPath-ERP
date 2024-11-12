@@ -123,14 +123,14 @@ export function CreateTaskDrawer() {
             onChange={(content) => updateValue("description", content)}
           />
 
-          <Dropzone
+          {/* <Dropzone
             mt="xl"
             selected={form.data.attachments}
             onChange={(files) => updateValue("attachments", files)}
             remove={(index) => removeAttachment(index)}
-          />
+          /> */}
 
-          <MultiSelect
+          {/* <MultiSelect
             label="Subscribers"
             placeholder="Select subscribers"
             searchable
@@ -142,7 +142,7 @@ export function CreateTaskDrawer() {
               label: i.name,
             }))}
             error={form.errors.subscribed_users}
-          />
+          /> */}
 
           <Flex justify="space-between" mt="xl">
             <Button variant="transparent" w={100} disabled={form.processing} onClick={closeDrawer}>

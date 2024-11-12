@@ -59,7 +59,7 @@ const CompanyEdit = () => {
 
       <ContainerBox maw={600}>
         <form onSubmit={e => submit(e, { forceFormData: true })}>
-          <Grid
+          {/* <Grid
             justify='flex-start'
             align='center'
             gutter='lg'
@@ -102,7 +102,7 @@ const CompanyEdit = () => {
                 240px &times; 64px (aspect 15:4)
               </Text>
             </Grid.Col>
-          </Grid>
+          </Grid> */}
 
           <TextInput
             label='Name'
@@ -163,7 +163,7 @@ const CompanyEdit = () => {
             />
           </Fieldset>
 
-          <Fieldset
+          {/* <Fieldset
             legend='Details'
             mt='xl'
           >
@@ -249,7 +249,7 @@ const CompanyEdit = () => {
                 disabled={!can('edit owner company')}
               />
             </Group>
-          </Fieldset>
+          </Fieldset> */}
 
           <Fieldset
             legend='Contact'

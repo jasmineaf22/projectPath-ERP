@@ -147,7 +147,7 @@ const ClientCompanyEdit = () => {
             />
           </Fieldset>
 
-          <Fieldset
+          {/* <Fieldset
             legend='Details'
             mt='xl'
           >
@@ -198,7 +198,7 @@ const ClientCompanyEdit = () => {
               onChange={e => updateValue('swift', e.target.value)}
               error={form.errors.swift}
             />
-          </Fieldset>
+          </Fieldset> */}
 
           <Fieldset
             legend='Contact'

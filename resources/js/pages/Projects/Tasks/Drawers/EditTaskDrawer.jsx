@@ -181,14 +181,14 @@ export function EditTaskDrawer() {
                 readOnly={!can("edit task")}
               />
 
-              {can("edit task") && (
+              {/* {can("edit task") && (
                 <Dropzone
                   mt="xl"
                   selected={task.attachments}
                   onChange={(files) => uploadAttachments(task, files)}
                   remove={(index) => deleteAttachment(task, index)}
                 />
-              )}
+              )} */}
 
               {can("view comments") && <Comments task={task} />}
             </div>
@@ -275,7 +275,7 @@ export function EditTaskDrawer() {
                 />
               )}
 
-              <MultiSelect
+              {/* <MultiSelect
                 label="Subscribers"
                 placeholder={!data.subscribed_users.length ? "Select subscribers" : null}
                 mt="lg"
@@ -286,7 +286,7 @@ export function EditTaskDrawer() {
                   label: i.name,
                 }))}
                 readOnly={!can("edit task")}
-              />
+              /> */}
             </div>
           </form>
         </>

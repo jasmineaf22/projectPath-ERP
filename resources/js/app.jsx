@@ -37,7 +37,7 @@ const theme = createTheme({
 const appName = window.document.getElementsByTagName("title")[0]?.innerText || "Laravel";
 
 createInertiaApp({
-  title: (title) => `${title} - ${appName}`,
+  title: (title) => `${title} - ProjectPath`,
   resolve: (name) =>
     resolvePageComponent(`./pages/${name}.jsx`, import.meta.glob("./pages/**/*.jsx")),
   setup({ el, App, props }) {

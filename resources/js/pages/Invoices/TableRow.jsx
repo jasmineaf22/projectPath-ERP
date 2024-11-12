@@ -68,9 +68,9 @@ export default function TableRow({ item }) {
       <Table.Td>
         <Text fz="sm">{money(item.amount, item.client_company.currency.code)}</Text>
       </Table.Td>
-      <Table.Td>
+      {/* <Table.Td>
         <Text fz="sm">{money(item.amount_with_tax, item.client_company.currency.code)}</Text>
-      </Table.Td>
+      </Table.Td> */}
       <Table.Td>
         <Text
           fz="sm"

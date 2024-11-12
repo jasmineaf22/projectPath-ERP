@@ -93,27 +93,27 @@ export default function Sidebar() {
         active: route().current("invoices.*"),
         visible: can("view invoices"),
       },
-      {
-        label: "Reports",
-        icon: IconReportAnalytics,
-        active: route().current("reports.*"),
-        opened: route().current("reports.*"),
-        visible: can("view logged time sum report") || can("view daily logged time report"),
-        links: [
-          {
-            label: "Logged time sum",
-            link: route("reports.logged-time.sum"),
-            active: route().current("reports.logged-time.sum"),
-            visible: can("view logged time sum report"),
-          },
-          {
-            label: "Daily logged time",
-            link: route("reports.logged-time.daily"),
-            active: route().current("reports.logged-time.daily"),
-            visible: can("view daily logged time report"),
-          },
-        ],
-      },
+      // {
+      //   label: "Reports",
+      //   icon: IconReportAnalytics,
+      //   active: route().current("reports.*"),
+      //   opened: route().current("reports.*"),
+      //   visible: can("view logged time sum report") || can("view daily logged time report"),
+      //   links: [
+      //     {
+      //       label: "Logged time sum",
+      //       link: route("reports.logged-time.sum"),
+      //       active: route().current("reports.logged-time.sum"),
+      //       visible: can("view logged time sum report"),
+      //     },
+      //     {
+      //       label: "Daily logged time",
+      //       link: route("reports.logged-time.daily"),
+      //       active: route().current("reports.logged-time.daily"),
+      //       visible: can("view daily logged time report"),
+      //     },
+      //   ],
+      // },
       {
         label: "Settings",
         icon: IconSettings,
@@ -121,24 +121,24 @@ export default function Sidebar() {
         opened: route().current("settings.*"),
         visible: can("view owner company") || can("view roles") || can("view labels"),
         links: [
-          {
-            label: "Company",
-            link: route("settings.company.edit"),
-            active: route().current("settings.company.*"),
-            visible: can("view owner company"),
-          },
+          // {
+          //   label: "Company",
+          //   link: route("settings.company.edit"),
+          //   active: route().current("settings.company.*"),
+          //   visible: can("view owner company"),
+          // },
           {
             label: "Roles",
             link: route("settings.roles.index"),
             active: route().current("settings.roles.*"),
             visible: can("view roles"),
           },
-          {
-            label: "Labels",
-            link: route("settings.labels.index"),
-            active: route().current("settings.labels.*"),
-            visible: can("view labels"),
-          },
+          // {
+          //   label: "Labels",
+          //   link: route("settings.labels.index"),
+          //   active: route().current("settings.labels.*"),
+          //   visible: can("view labels"),
+          // },
         ],
       },
     ]);

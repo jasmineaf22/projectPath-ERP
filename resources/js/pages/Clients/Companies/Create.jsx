@@ -145,7 +145,7 @@ const ClientCompanyCreate = () => {
             />
           </Fieldset>
 
-          <Fieldset
+          {/* <Fieldset
             legend='Details'
             mt='xl'
           >
@@ -208,7 +208,7 @@ const ClientCompanyCreate = () => {
               data={currencies}
               error={form.errors.currency_id}
             />
-          </Fieldset>
+          </Fieldset> */}
 
           <Fieldset
             legend='Contact'

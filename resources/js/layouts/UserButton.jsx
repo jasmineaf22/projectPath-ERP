@@ -21,6 +21,7 @@ import {
   IconMoon,
   IconSun,
   IconUser,
+  IconBuildingSkyscraper
 } from "@tabler/icons-react";
 import classes from "./css/UserButton.module.css";
 
@@ -87,6 +88,12 @@ export default function UserButton() {
         >
           My Profile
         </Menu.Item>
+        {/* <Menu.Item
+          leftSection={<IconBuildingSkyscraper style={{ width: rem(14), height: rem(14) }} />}
+          onClick={() => redirectTo("settings.company.edit")}
+        >
+          My Company
+        </Menu.Item> */}
         {/* <Menu.Item
           leftSection={<IconBell style={{ width: rem(14), height: rem(14) }} />}
           onClick={() => redirectTo("notifications")}
