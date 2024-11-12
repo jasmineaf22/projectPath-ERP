@@ -60,7 +60,7 @@ export function ProjectCard({ project }) {
             },
             {
               value: completedPercent,
-              color: "blue",
+              color: "yellow",
               tooltip: `Completed: ${project.completed_tasks_count}`,
             },
           ]}

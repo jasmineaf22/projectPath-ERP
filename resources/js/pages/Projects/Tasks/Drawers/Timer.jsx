@@ -100,7 +100,7 @@ export default function Timer({ task, ...props }) {
                     <Link href={route("users.edit", timeLog.user_id)}>{timeLog.user.name}</Link>
                   </Text>
                   {isTimerRunning(timeLog) ? (
-                    <Text fz={14} fw={600} c="blue" className={classes.blink}>
+                    <Text fz={14} fw={600} c="yellow" className={classes.blink}>
                       running
                     </Text>
                   ) : (

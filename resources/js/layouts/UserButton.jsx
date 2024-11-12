@@ -50,7 +50,7 @@ export default function UserButton() {
           className={classes.user}
           bg={
             computedColorScheme === "light"
-              ? darken(colors.blue[8], 0.15)
+              ? darken(colors.yellow[8], 0.15)
               : "var(--mantine-color-dark-7)"
           }
         >
@@ -58,10 +58,10 @@ export default function UserButton() {
             <Avatar
               src={user.avatar}
               radius="xl"
-              color={computedColorScheme === "light" ? "white" : "blue"}
+              color={computedColorScheme === "light" ? "white" : "yellow"}
               alt={user.name}
             >
-              {getInitials(user.name)}
+              {/* {getInitials(user.name)} */}
             </Avatar>
 
             <div style={{ flex: 1 }}>
@@ -69,7 +69,7 @@ export default function UserButton() {
                 {user.name}
               </Text>
 
-              <Text c={computedColorScheme === "light" ? "blue.4" : "dimmed"} size="xs">
+              <Text c={computedColorScheme === "light" ? "yellow.4" : "dimmed"} size="xs">
                 {user.job_title}
               </Text>
             </div>

@@ -56,7 +56,7 @@ export default function TaskCard({ task, index }) {
                       src={task.assigned_to_user.avatar}
                       radius="xl"
                       size={20}
-                      color={computedColorScheme === "light" ? "white" : "blue"}
+                      color={computedColorScheme === "light" ? "white" : "yellow"}
                     >
                       {getInitials(task.assigned_to_user.name)}
                     </Avatar>
