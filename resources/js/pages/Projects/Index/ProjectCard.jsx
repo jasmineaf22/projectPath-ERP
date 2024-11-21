@@ -52,7 +52,7 @@ export default function ProjectCard({ item }) {
         </Progress.Root>
 
         <Group justify="space-between" mt="md">
-          <Avatar.Group spacing="sm">
+          {/* <Avatar.Group spacing="sm">
             {item.users_with_access.slice(0, 4).map((user) => (
               <Tooltip key={user.id} label={user.name} openDelay={300} withArrow>
                 <Avatar
@@ -62,14 +62,14 @@ export default function ProjectCard({ item }) {
                   data-ignore-link
                   className={classes.avatar}
                 >
-                  {/* {getInitials(user.name)} */}
+                  {getInitials(user.name)}
                 </Avatar>
               </Tooltip>
             ))}
             {item.users_with_access.length - 4 > 0 && (
               <Avatar radius="xl">+{item.users_with_access.length - 4}</Avatar>
             )}
-          </Avatar.Group>
+          </Avatar.Group> */}
 
           <ProjectCardActions item={item} />
         </Group>

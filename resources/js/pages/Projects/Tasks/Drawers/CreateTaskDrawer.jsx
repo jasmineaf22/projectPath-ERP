@@ -213,7 +213,7 @@ export function CreateTaskDrawer() {
             onChange={(value) => updateValue("estimation", value)}
           />
 
-          <Checkbox
+          {/* <Checkbox
             label="Billable"
             mt="xl"
             checked={form.data.billable}
@@ -227,7 +227,7 @@ export function CreateTaskDrawer() {
               checked={form.data.hidden_from_clients}
               onChange={(event) => updateValue("hidden_from_clients", event.currentTarget.checked)}
             />
-          )}
+          )} */}
         </div>
       </form>
     </Drawer>

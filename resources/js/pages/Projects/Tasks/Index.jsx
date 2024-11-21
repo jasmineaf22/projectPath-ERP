@@ -94,7 +94,7 @@ const TasksIndex = () => {
                               />
                             ))}
                           {provided.placeholder}
-                          {!route().params.archived && can("create task group") && (
+                          {/* {!route().params.archived && can("create task group") && (
                             <Button
                               leftSection={<IconPlus size={14} />}
                               variant="transparent"
@@ -107,7 +107,7 @@ const TasksIndex = () => {
                             >
                               Add {tasksView === "list" ? "tasks group" : "group"}
                             </Button>
-                          )}
+                          )} */}
                         </div>
                       </div>
                     )}

@@ -255,7 +255,7 @@ export function EditTaskDrawer() {
 
               {(can("view time logs") || can("add time log")) && <Timer mt="xl" task={task} />}
 
-              <Checkbox
+              {/* <Checkbox
                 label="Billable"
                 mt="xl"
                 checked={data.billable}
@@ -273,7 +273,7 @@ export function EditTaskDrawer() {
                   }
                   disabled={!can("edit task")}
                 />
-              )}
+              )} */}
 
               {/* <MultiSelect
                 label="Subscribers"

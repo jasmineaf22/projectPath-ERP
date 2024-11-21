@@ -13,7 +13,7 @@ export default function Filters() {
 
   return (
     <>
-      <Stack justify="flex-start" gap={24}>
+      {/* <Stack justify="flex-start" gap={24}>
         {groups.length > 0 && (
           <div>
             <Text fz="xs" fw={700} tt="uppercase" mb="sm">
@@ -105,7 +105,7 @@ export default function Filters() {
             </Stack>
           </div>
         )}
-      </Stack>
+      </Stack> */}
     </>
   );
 }
