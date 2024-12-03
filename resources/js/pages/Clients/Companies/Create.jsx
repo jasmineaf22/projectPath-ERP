@@ -11,8 +11,8 @@ import {
   Fieldset,
   Grid,
   Group,
-  MultiSelect,
   Select,
+  MultiSelect,
   TextInput,
   Title,
 } from '@mantine/core';
@@ -27,7 +27,7 @@ const ClientCompanyCreate = () => {
     postal_code: '',
     city: '',
     country_id: '',
-    currency_id: '',
+    currency_id: '106',
     email: '',
     phone: '',
     web: '',
@@ -78,7 +78,7 @@ const ClientCompanyCreate = () => {
             error={form.errors.name}
           />
 
-          <Select
+          {/* <Select
             label='Default currency'
             placeholder='Select currency'
             required
@@ -88,7 +88,7 @@ const ClientCompanyCreate = () => {
             onChange={value => updateValue('currency_id', value)}
             data={currencies}
             error={form.errors.currency_id}
-          />
+          /> */}
 
           <MultiSelect
             label='Clients'

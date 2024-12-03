@@ -14,7 +14,7 @@ import {
   FileInput,
   Grid,
   Group,
-  MultiSelect,
+  Select,
   PasswordInput,
   Text,
   TextInput,
@@ -102,7 +102,7 @@ const ClientCreate = () => {
             error={form.errors.phone}
           />
 
-          <MultiSelect
+          <Select
             label="Companies"
             placeholder="Clients companies"
             mt="md"

@@ -85,13 +85,13 @@ const Login = ({ notify }) => {
           />
           <Group justify="space-between" mt="lg">
             <Checkbox label="Remember me" />
-            <Anchor
+            {/* <Anchor
               type="button"
               size="sm"
               onClick={() => router.get(route("auth.forgotPassword.form"))}
             >
               Forgot password?
-            </Anchor>
+            </Anchor> */}
           </Group>
           <Button type="submit" fullWidth mt="xl" disabled={form.processing}>
             Sign in

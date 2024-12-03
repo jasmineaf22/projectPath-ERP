@@ -86,13 +86,13 @@ export default function Sidebar() {
         active: route().current("users.*"),
         visible: can("view users"),
       },
-      {
-        label: "Invoices",
-        icon: IconFileDollar,
-        link: route("invoices.index"),
-        active: route().current("invoices.*"),
-        visible: can("view invoices"),
-      },
+      // {
+      //   label: "Invoices",
+      //   icon: IconFileDollar,
+      //   link: route("invoices.index"),
+      //   active: route().current("invoices.*"),
+      //   visible: can("view invoices"),
+      // },
       // {
       //   label: "Reports",
       //   icon: IconReportAnalytics,
@@ -114,33 +114,33 @@ export default function Sidebar() {
       //     },
       //   ],
       // },
-      {
-        label: "Settings",
-        icon: IconSettings,
-        active: route().current("settings.*"),
-        opened: route().current("settings.*"),
-        visible: can("view owner company") || can("view roles") || can("view labels"),
-        links: [
+      // {
+      //   label: "Settings",
+      //   icon: IconSettings,
+      //   active: route().current("settings.*"),
+      //   opened: route().current("settings.*"),
+      //   visible: can("view owner company") || can("view roles") || can("view labels"),
+      //   links: [
           // {
           //   label: "Company",
           //   link: route("settings.company.edit"),
           //   active: route().current("settings.company.*"),
           //   visible: can("view owner company"),
           // },
-          {
-            label: "Roles",
-            link: route("settings.roles.index"),
-            active: route().current("settings.roles.*"),
-            visible: can("view roles"),
-          },
+          // {
+          //   label: "Roles",
+          //   link: route("settings.roles.index"),
+          //   active: route().current("settings.roles.*"),
+          //   visible: can("view roles"),
+          // },
           // {
           //   label: "Labels",
           //   link: route("settings.labels.index"),
           //   active: route().current("settings.labels.*"),
           //   visible: can("view labels"),
           // },
-        ],
-      },
+        // ],
+      // },
     ]);
   }, []);
 

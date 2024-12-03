@@ -93,7 +93,7 @@ const ProjectEdit = ({ dropdowns: { companies, users,currencies } }) => {
             onChange={e => updateValue('description', e.target.value)}
           />
 
-          <Select
+          <MultiSelect
             label='Company requesting work'
             placeholder='Select company'
             required
@@ -115,7 +115,7 @@ const ProjectEdit = ({ dropdowns: { companies, users,currencies } }) => {
             error={form.errors.users}
           />
 
-          <NumberInput
+          {/* <NumberInput
             label='Hourly rate'
             mt='md'
             allowNegative={false}
@@ -126,7 +126,7 @@ const ProjectEdit = ({ dropdowns: { companies, users,currencies } }) => {
             value={form.data.rate}
             onChange={value => updateValue('rate', value)}
             error={form.errors.rate}
-          />
+          /> */}
 
           <Group
             justify='space-between'
