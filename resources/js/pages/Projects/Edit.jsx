@@ -93,7 +93,7 @@ const ProjectEdit = ({ dropdowns: { companies, users,currencies } }) => {
             onChange={e => updateValue('description', e.target.value)}
           />
 
-          <MultiSelect
+          <Select
             label='Company requesting work'
             placeholder='Select company'
             required
